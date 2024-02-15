@@ -1,1 +1,1 @@
-Sitemap: https://usyd-soles-edu.github.io/soles-assignment/sitemap.xml
+Sitemap: https://ENVX-resources.github.io/ENVX2001-2024-Lab-template/sitemap.xml
