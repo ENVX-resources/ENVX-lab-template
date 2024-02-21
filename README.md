@@ -1,6 +1,6 @@
 <div align="center">
 
-## ENVX1002
+## ENVX2001: Applied Statistical Methods
 
 ### Lab 01
 
