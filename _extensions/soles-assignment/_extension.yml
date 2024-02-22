@@ -10,8 +10,8 @@ contributes:
       linkcolor: "#e64626"
       html-math-method: katex
       code-overflow: wrap
-      code-block-border-left: "#e64626"
-      code-block-bg: true
+      code-block-border-left: "#e64626" # "#e64626"
+      code-block-bg: "#FFFFFF"
       code-summary: "Show the code"
       fontsize: 11pt
       toc: true
@@ -26,7 +26,7 @@ contributes:
         - text: |
             \pagestyle{usyd}
       code-block-bg: "#F1F1F1"
-      code-block-border-left: "#E64626"
+      # code-block-border-left: "#E64626"
       toc: false
       fontsize: 10pt
       monofont: Source Code Pro
