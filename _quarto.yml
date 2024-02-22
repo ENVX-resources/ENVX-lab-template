@@ -1,14 +1,18 @@
 project:
   type: website
-  # output-dir: docs
   
 title-block-banner: "#FCEDE2"
 title-block-banner-color: "#000"
 
 format:
   soles-assignment-html:
-    self-contained: false # !!! set true when final
+    embed-resources: true
   soles-assignment-pdf:
     keep-tex: false
     toc: true
-    
+
+execute:
+  freeze: true
+
+profile:
+  default: exercise
