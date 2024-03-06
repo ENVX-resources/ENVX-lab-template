@@ -1,12 +1,5 @@
 ---
 title: Lab 01
-subtitle: "UNIT1234"
-description: The University of Sydney
-date: today
-date-format: "[Semester 1,] YYYY"
-# adjust banner and title block colours
-title-block-banner: "#FCEDE2"
-title-block-banner-color: "#000"
 ---
 
 ## Welcome
@@ -40,7 +33,8 @@ If it fits, i sits.
 
 ### Download 
 
-Download cat image: {{< downloadthis images/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg dname="cat.jpg" label="Download the cat image" type="danger" >}}
+Download cat image: 
+{{< downloadthis images/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg dname="cat" label="Download the cat image" type="danger" >}}
 
 ## Exercise 1
 
@@ -71,13 +65,28 @@ b. Hopped up on goofballs. Hunt anything that moves. All of a sudden... go crazy
 
 ### Solution 1 {style="color:green;"}
 
-This is a solution box that appears when the `solution` profile is active.
+This is a solution box that appears when the `solution` profile is active. Under no profile or the `exercise` profile, this text is hidden.
 
-```{r}
-1 + 1
+You muse encase solutions in a `content-visible` div with the `when-profile` attribute set to `solution`. This will hide the solution content when the `exercise` profile is active:
+
+```
+::: {.content-visible when-profile="solution"}
+(your hidden content here)
+:::
 ```
 
-More text here.
+**To switch to the `exercise` profile open `_quarto.yml` and uncomment `- exercise` in the default profile section:**
+
+```yaml
+profiles:
+  default:
+    # - exercise
+    - solution
+```
+
+This will hide the solution and show the exercise content. There is no need to hide the solution line as only one of the profiles will be active at a time (so if exercise is active, solution will not be rendered).
+
+-- End of Solution 1 --
 :::
 
 
