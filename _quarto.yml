@@ -7,20 +7,20 @@ project:
 date: today
 date-format: "[Semester 1,] YYYY"
 
-# visual options
-title-block-banner: "#FCEDE2"
-title-block-banner-color: "#000"
-reference-location: margin
-citation-location: margin
 
 
 format:
   soles-assignment-html:
     embed-resources: false
-  # soles-assignment-pdf:
-  #   pdf-engine: lualatex
-  #   keep-tex: false
-  #   toc: true
+    title-block-banner: "#FCEDE2"
+    title-block-banner-color: "#000"
+    reference-location: margin
+    citation-location: margin
+  soles-assignment-pdf:
+    pdf-engine: lualatex
+    keep-tex: false
+    toc: true
+
 
 execute:
   freeze: auto
