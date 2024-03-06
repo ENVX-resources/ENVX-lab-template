@@ -19,8 +19,8 @@ contributes:
       fig-cap-location: margin
       css: assets/styles.css
     pdf:
-      pdf-engine: lualatex # lualatex pdflatex lualatex latexmk (if opt -xelatex)
-      pdf-engine-opt: -xelatex
+      pdf-engine: lualatex # lualatex pdflatex lualatex
+      # pdf-engine-opt: -xelatex  # use with latexmk only
       include-in-header:
         - soles-pdf.tex
       include-before-body:
