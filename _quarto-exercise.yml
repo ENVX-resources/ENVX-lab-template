@@ -1,4 +1,4 @@
 project:
   output-dir: _site
-  post-render: 
-  - quarto render --profile solutions
+  # post-render: 
+  # - quarto render --profile solution
